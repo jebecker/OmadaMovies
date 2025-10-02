@@ -14,19 +14,11 @@
 			remoteGlobalIDString = F23463CC2E8F12BD008ABAA6;
 			remoteInfo = OmadaMovies;
 		};
-		F23463E72E8F12BF008ABAA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F23463C52E8F12BD008ABAA6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F23463CC2E8F12BD008ABAA6;
-			remoteInfo = OmadaMovies;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F23463CD2E8F12BD008ABAA6 /* OmadaMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmadaMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23463DC2E8F12BF008ABAA6 /* OmadaMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmadaMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F23463E62E8F12BF008ABAA6 /* OmadaMoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmadaMoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,11 +30,6 @@
 		F23463DF2E8F12BF008ABAA6 /* OmadaMoviesTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = OmadaMoviesTests;
-			sourceTree = "<group>";
-		};
-		F23463E92E8F12BF008ABAA6 /* OmadaMoviesUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = OmadaMoviesUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,13 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F23463E32E8F12BF008ABAA6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +57,6 @@
 			children = (
 				F23463CF2E8F12BD008ABAA6 /* OmadaMovies */,
 				F23463DF2E8F12BF008ABAA6 /* OmadaMoviesTests */,
-				F23463E92E8F12BF008ABAA6 /* OmadaMoviesUITests */,
 				F23463CE2E8F12BD008ABAA6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +66,6 @@
 			children = (
 				F23463CD2E8F12BD008ABAA6 /* OmadaMovies.app */,
 				F23463DC2E8F12BF008ABAA6 /* OmadaMoviesTests.xctest */,
-				F23463E62E8F12BF008ABAA6 /* OmadaMoviesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,29 +118,6 @@
 			productReference = F23463DC2E8F12BF008ABAA6 /* OmadaMoviesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F23463E52E8F12BF008ABAA6 /* OmadaMoviesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F23463F62E8F12BF008ABAA6 /* Build configuration list for PBXNativeTarget "OmadaMoviesUITests" */;
-			buildPhases = (
-				F23463E22E8F12BF008ABAA6 /* Sources */,
-				F23463E32E8F12BF008ABAA6 /* Frameworks */,
-				F23463E42E8F12BF008ABAA6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F23463E82E8F12BF008ABAA6 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F23463E92E8F12BF008ABAA6 /* OmadaMoviesUITests */,
-			);
-			name = OmadaMoviesUITests;
-			packageProductDependencies = (
-			);
-			productName = OmadaMoviesUITests;
-			productReference = F23463E62E8F12BF008ABAA6 /* OmadaMoviesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,10 +132,6 @@
 						CreatedOnToolsVersion = 26.0.1;
 					};
 					F23463DB2E8F12BF008ABAA6 = {
-						CreatedOnToolsVersion = 26.0.1;
-						TestTargetID = F23463CC2E8F12BD008ABAA6;
-					};
-					F23463E52E8F12BF008ABAA6 = {
 						CreatedOnToolsVersion = 26.0.1;
 						TestTargetID = F23463CC2E8F12BD008ABAA6;
 					};
@@ -202,7 +153,6 @@
 			targets = (
 				F23463CC2E8F12BD008ABAA6 /* OmadaMovies */,
 				F23463DB2E8F12BF008ABAA6 /* OmadaMoviesTests */,
-				F23463E52E8F12BF008ABAA6 /* OmadaMoviesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +166,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F23463DA2E8F12BF008ABAA6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F23463E42E8F12BF008ABAA6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +189,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F23463E22E8F12BF008ABAA6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +196,6 @@
 			isa = PBXTargetDependency;
 			target = F23463CC2E8F12BD008ABAA6 /* OmadaMovies */;
 			targetProxy = F23463DD2E8F12BF008ABAA6 /* PBXContainerItemProxy */;
-		};
-		F23463E82E8F12BF008ABAA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F23463CC2E8F12BD008ABAA6 /* OmadaMovies */;
-			targetProxy = F23463E72E8F12BF008ABAA6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -327,7 +258,10 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -381,7 +315,10 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -423,7 +360,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
@@ -467,7 +404,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
@@ -492,7 +429,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmadaMovies.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OmadaMovies";
 				XROS_DEPLOYMENT_TARGET = 26.0;
@@ -518,59 +455,9 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmadaMovies.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OmadaMovies";
-				XROS_DEPLOYMENT_TARGET = 26.0;
-			};
-			name = Release;
-		};
-		F23463F72E8F12BF008ABAA6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z599R7LH75;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				MACOSX_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.becker.OmadaMoviesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = OmadaMovies;
-				XROS_DEPLOYMENT_TARGET = 26.0;
-			};
-			name = Debug;
-		};
-		F23463F82E8F12BF008ABAA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z599R7LH75;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				MACOSX_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.becker.OmadaMoviesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = OmadaMovies;
 				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
@@ -601,15 +488,6 @@
 			buildConfigurations = (
 				F23463F42E8F12BF008ABAA6 /* Debug */,
 				F23463F52E8F12BF008ABAA6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F23463F62E8F12BF008ABAA6 /* Build configuration list for PBXNativeTarget "OmadaMoviesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F23463F72E8F12BF008ABAA6 /* Debug */,
-				F23463F82E8F12BF008ABAA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
