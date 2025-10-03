@@ -15,7 +15,7 @@ import Foundation
  descriptions can be shown directly in UI or logs.
  */
 /// Errors that can occur when performing network requests.
-enum NetworkClientError: Error, LocalizedError {
+enum NetworkClientError: Error {
     /// A catch-all error that wraps an underlying error message.
     /// The associated value is a human-readable description.
     case genericError(String)
@@ -27,7 +27,7 @@ enum NetworkClientError: Error, LocalizedError {
     
     /// A user-facing description of the error suitable for alerts and logs.
     /// Provided to satisfy `LocalizedError` conformance.
-    var errorDescription: String {
+    var localizedDescription: String {
         switch self {
         case .httpError(let errorCode):
             "Response returned HTTP Status code: \(errorCode)"
