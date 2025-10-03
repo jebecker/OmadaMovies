@@ -51,7 +51,7 @@ struct PosterImageView: View {
                 .scaledToFill()
                 .frame(width: 100, height: 150)
         } placeholder: {
-            Color.gray
+            Image(systemName: "movieclapper")
                 .frame(width: 100, height: 150)
         }
     }
