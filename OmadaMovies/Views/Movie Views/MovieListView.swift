@@ -42,14 +42,18 @@ struct PosterImageView: View {
     let posterURL: URL?
     
     var body: some View {
+        // Scroll performance is acceptable because we are requesting a 300 pixel wide image from the server which roughly matches the desired frame below
+        // In order to entirely eliminate scroll performance issues, an image downloading, resizing and caching system would need to be created to do all computation on a background thread
+        // Then the finished image would be sent back to the ImageView completely configured with no scaling and rendering on the main thread
         AsyncImage(url: posterURL) { image in
-            image.resizable()
+            image
+                .resizable()
+                .scaledToFill()
+                .frame(width: 100, height: 150)
         } placeholder: {
             Color.gray
+                .frame(width: 100, height: 150)
         }
-        .aspectRatio(contentMode: .fill)
-        .frame(width: 100, height: 150)
-        .clipped()
     }
 }
 
@@ -70,6 +74,7 @@ struct MovieViewModel: MovieViewModeling {
     let viewerRating: Double
     let title: String
     
+    // Move all computation to be only done once on init to help best align with SwiftUI's view cycle creation
     init(movie: Movie) {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
@@ -100,6 +105,7 @@ struct MovieViewModel: MovieViewModeling {
     
     private static func createPosterURL(posterPath: String?) -> URL? {
         guard let posterPath else { return nil }
-        return URL(string: "https://image.tmdb.org/t/p/original\(posterPath)")
+        // request a 300 pixel wide image instead of receiving the full sized image from the server ('w300')
+        return URL(string: "https://image.tmdb.org/t/p/w300\(posterPath)")
     }
 }
