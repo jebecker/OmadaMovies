@@ -17,7 +17,7 @@ struct MovieSearchView: View {
                 case .loading:
                     ProgressView("Loading...")
                 case .loaded(let movies):
-                    Text("LOADED")
+                    MovieListView(movies: movies)
                 case .empty(let message):
                     MessageView(title: "", message: message, systemImage: "popcorn")
                 case .error(let error):
@@ -26,7 +26,7 @@ struct MovieSearchView: View {
             }
             .navigationTitle("Movie Search")
         }
-        .searchable(text: $viewModel.searchQuery)
+        .searchable(text: $viewModel.searchQuery, placement: .navigationBarDrawer)
         .onChange(of: viewModel.debouncedSearchQuery) {
             Task {
                 await viewModel.search()
