@@ -26,7 +26,11 @@ struct MovieSearchView: View {
             }
             .navigationTitle("Movie Search")
         }
-        .searchable(text: $viewModel.searchQuery, placement: .navigationBarDrawer, prompt: "Search for a movie")
+        .searchable(
+            text: $viewModel.searchQuery,
+            placement: .navigationBarDrawer,
+            prompt: "Search for a movie"
+        )
         .onChange(of: viewModel.debouncedSearchQuery) {
             Task {
                 await viewModel.search()

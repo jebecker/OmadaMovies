@@ -17,7 +17,8 @@ struct MovieReleaseDetailsView: View {
                 .font(.title)
                 .fontWeight(.bold)
             Text(releaseDate)
-                .font(.subheadline)
+                .font(.caption)
+                .foregroundStyle(.secondary)
         }
     }
 }
