@@ -38,14 +38,20 @@ class MovieSearchViewModel: MovieSearchViewModeling {
     var viewState: MovieSearchViewState
     
     /// The raw text from the search field. Changes are debounced before being applied to `debouncedSearchQuery`.
+    /// Debounce strategy: Trailing-only debounce. Strategy can be changed at anytime to suit (Leading-only, Leading+Trailing, etc)
     var searchQuery: String = "" {
         didSet {
             // Cancel and replace any pending debounce work with the latest query change.
+            debounceTask?.cancel()
             debounceTask = Task { @MainActor in
                 // If the user is typing (non-empty), wait 300ms to avoid firing on every keystroke.
                 if !searchQuery.isEmpty {
                     try? await Task.sleep(nanoseconds: 300_000_000)
                 }
+                
+                // Check if the Task is cancelled and exit before affecting anything externally
+                if Task.isCancelled { return }
+                
                 // Publish the debounced value to trigger downstream search.
                 debouncedSearchQuery = searchQuery
             }
