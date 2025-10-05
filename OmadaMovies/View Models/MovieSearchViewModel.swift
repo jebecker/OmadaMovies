@@ -85,6 +85,7 @@ class MovieSearchViewModel: MovieSearchViewModeling {
         case .loaded(_):
             // If the user cleared the query, reset to empty state instead of searching.
             if debouncedSearchQuery.isEmpty {
+                viewState = .empty(Self.emptyStateMessage)
                 break
             }
             // Transition to loading before performing the search.
