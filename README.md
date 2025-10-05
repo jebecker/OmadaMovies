@@ -101,6 +101,10 @@ SwiftData can be added in the future for lightweight persistence (e.g., recent s
 - **Protocol-driven design** provides flexibility and testability without introducing third-party dependencies.
 - **Modern SwiftUI & Observation** keep the code concise and expressive, aligned with the latest iOS capabilities.
 
+## Code Documentation & Comments
+
+Clear, concise documentation accelerates onboarding, clarifies intent, reduces bugs, and improves code reviews. This project intentionally emphasizes documentation so the codebase remains understandable and maintainable as it evolves.
+
 ## Platform and Language Choices
 
 **Swift 6.2**
@@ -111,3 +115,4 @@ SwiftData can be added in the future for lightweight persistence (e.g., recent s
   - Targets the latest platform capabilities and APIs, simplifying code paths (fewer availability checks) and ensuring access to modern system features.
 
 By adopting Apple’s latest technologies such as SwiftData for persistence, Approachable Concurrency and Default Actor Isolation in Swift 6.2, and modern SwiftUI patterns, this project stays current with the platform and serves as a hands-on way to learn and internalize these tools. The result is cleaner, safer code and a codebase that remains maintainable as the ecosystem evolves.
+
