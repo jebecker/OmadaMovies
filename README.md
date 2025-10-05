@@ -87,6 +87,7 @@ SwiftData can be added in the future for lightweight persistence (e.g., recent s
 
 ## Future Improvements
 
+- **Testing**: Due to time constraints, unit testing of the view models and other various critical UI/E2E were not added but with the way the app is architected, adding these would be straight forward and simple.
 - **Paging & infinite scroll**: Extend the search client and view model to support paging and incremental loading.
 - **Caching**: Lightweight in-memory or disk caching for images and results.
 - **Offline mode**: Integrate SwiftData to persist recent results and favorites for offline access.
