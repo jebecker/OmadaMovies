@@ -9,6 +9,7 @@ import SwiftUI
 
 /// The main entry point for the OmadaMovies app.
 /// Defines the root scene and sets `MovieSearchView` as the initial screen.
+@main
 struct OmadaMoviesApp: App {
     var body: some Scene {
         WindowGroup {
