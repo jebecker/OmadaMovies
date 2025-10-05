@@ -1,5 +1,5 @@
 //
-//  PosterImageView.swift
+//  MoviePosterImageView.swift
 //  OmadaMovies
 //
 //  Created by Jayme Becker on 10/4/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PosterImageView: View {
+struct MoviePosterImageView: View {
     let posterURL: URL?
     
     var body: some View {

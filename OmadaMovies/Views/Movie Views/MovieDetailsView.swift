@@ -21,7 +21,7 @@ struct MovieDetailsView: View {
                 Divider()
                 
                 HStack(alignment: .top, spacing: 8.0) {
-                    PosterImageView(posterURL: posterURL)
+                    MoviePosterImageView(posterURL: posterURL)
                     
                     VStack(alignment: .leading, spacing: 16.0) {
                         MovieReleaseDetailsView(
@@ -33,7 +33,7 @@ struct MovieDetailsView: View {
                             viewerRating: viewerRating,
                             formattedViewerRating: formattedViewerRating
                         )
-                        .padding([.trailing])
+                        .padding(.trailing)
                     }
                 }
                 
@@ -44,7 +44,7 @@ struct MovieDetailsView: View {
                 
                 Divider()
             }
-            .padding([.leading])
+            .padding(.leading)
             .multilineTextAlignment(.leading)
         }
     }

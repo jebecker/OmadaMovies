@@ -24,7 +24,7 @@ struct MessageView: View {
     ///   - title: A short, prominent title.
     ///   - message: A longer description of the situation.
     ///   - systemImage: An SF Symbols name to visually represent the message.
-    init(title: String, message: String, systemImage: String) {
+    init(title: String = "", message: String, systemImage: String) {
         self.title = title
         self.message = message
         self.systemImage = systemImage

@@ -19,7 +19,7 @@ struct MovieSearchView: View {
                 case .loaded(let movies):
                     MovieListView(movies: movies)
                 case .empty(let message):
-                    MessageView(title: "", message: message, systemImage: "popcorn")
+                    MessageView(message: message, systemImage: "popcorn")
                 case .error(let error):
                     MessageView(title: "Oops!", message: error, systemImage: "exclamationmark.triangle")
                 }

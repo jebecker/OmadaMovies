@@ -22,7 +22,7 @@ struct MovieView: View {
             )
         } label: {
             HStack(alignment: .top) {
-                PosterImageView(posterURL: viewModel.posterURL)
+                MoviePosterImageView(posterURL: viewModel.posterURL)
                 
                 MovieReleaseDetailsView(
                     title: viewModel.title,

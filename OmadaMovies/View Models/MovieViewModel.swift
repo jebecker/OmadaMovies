@@ -21,30 +21,34 @@ struct MovieViewModel: MovieViewModeling {
     let releaseYear: String
     let releaseDate: String
     let posterURL: URL?
-    let overview: String
-    let viewerRating: Double
     let formattedViewerRating: String
-    let title: String
     
-    // Move all computation to be only done once on init to help best align with SwiftUI's view cycle creation
+    var overview: String {
+        movie.overview
+    }
+    
+    var viewerRating: Double {
+        movie.voteAverage
+    }
+    
+    var title: String {
+        movie.title
+    }
+
+    private let movie: Movie
+    
+    // Move all computational heavy operations to be only done once on init to help best align with SwiftUI's view cycle creation
     init(movie: Movie) {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
-        releaseYear = Self.createReleaseYear(formatter: formatter, releaseDate: movie.releaseDate)
-        releaseDate = Self.createReleaseDate(formatter: formatter, releaseDate: movie.releaseDate)
-        posterURL = Self.createPosterURL(posterPath: movie.posterPath)
-        overview = movie.overview
-        viewerRating = movie.voteAverage
-        formattedViewerRating = "\(String(format: "%.1f", movie.voteAverage))/10"
-        title = movie.title
+        
+        self.movie = movie
+        self.releaseYear = Self.createReleaseYear(formatter: formatter, releaseDate: movie.releaseDate)
+        self.releaseDate = Self.createReleaseDate(formatter: formatter, releaseDate: movie.releaseDate)
+        self.posterURL = Self.createPosterURL(posterPath: movie.posterPath)
+        self.formattedViewerRating = "\(String(format: "%.1f", movie.voteAverage))/10"
     }
-    
-    private static var dateFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        return formatter
-    }
-    
+            
     private static func createReleaseYear(formatter: DateFormatter, releaseDate: String) -> String {
         let date = formatter.date(from: releaseDate) ?? Date()
         let year = Calendar.current.component(.year, from: date)

@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F23464FD2E92225D008ABAA6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F23464FC2E92225D008ABAA6 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F23463DD2E8F12BF008ABAA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -19,6 +23,7 @@
 /* Begin PBXFileReference section */
 		F23463CD2E8F12BD008ABAA6 /* OmadaMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmadaMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23463DC2E8F12BF008ABAA6 /* OmadaMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmadaMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23464FC2E92225D008ABAA6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -55,6 +60,7 @@
 		F23463C42E8F12BD008ABAA6 = {
 			isa = PBXGroup;
 			children = (
+				F23464FC2E92225D008ABAA6 /* README.md */,
 				F23463CF2E8F12BD008ABAA6 /* OmadaMovies */,
 				F23463DF2E8F12BF008ABAA6 /* OmadaMoviesTests */,
 				F23463CE2E8F12BD008ABAA6 /* Products */,
@@ -162,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23464FD2E92225D008ABAA6 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
