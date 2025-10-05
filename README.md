@@ -116,3 +116,6 @@ Clear, concise documentation accelerates onboarding, clarifies intent, reduces b
 
 By adopting Apple’s latest technologies such as SwiftData for persistence, Approachable Concurrency and Default Actor Isolation in Swift 6.2, and modern SwiftUI patterns, this project stays current with the platform and serves as a hands-on way to learn and internalize these tools. The result is cleaner, safer code and a codebase that remains maintainable as the ecosystem evolves.
 
+## Screen Recording Links
+- [Build and Functionality Walkthrough / Coding Sessions Vidoes](https://drive.google.com/drive/folders/1j9U0CoQABeJmn4p6taWpEtjHYDO5Tdsr?usp=sharing)
+
