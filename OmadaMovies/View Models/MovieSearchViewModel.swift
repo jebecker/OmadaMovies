@@ -43,7 +43,7 @@ class MovieSearchViewModel: MovieSearchViewModeling {
         didSet {
             // Cancel and replace any pending debounce work with the latest query change.
             debounceTask?.cancel()
-            debounceTask = Task { @MainActor in
+            debounceTask = Task {
                 // If the user is typing (non-empty), wait 300ms to avoid firing on every keystroke.
                 if !searchQuery.isEmpty {
                     try? await Task.sleep(nanoseconds: 300_000_000)
