@@ -41,6 +41,7 @@ struct MovieDetailsView: View {
                             title: title,
                             releaseDate: releaseDate
                         )
+                        .padding(.trailing)
                         
                         MovieViewerRatingView(
                             viewerRating: viewerRating,
