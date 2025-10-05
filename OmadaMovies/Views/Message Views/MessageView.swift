@@ -44,6 +44,5 @@ struct MessageView: View {
         }
         // Center the content vertically when possible.
         .defaultScrollAnchor(.center)
-        
     }
 }
