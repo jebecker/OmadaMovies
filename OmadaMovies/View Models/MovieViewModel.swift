@@ -57,7 +57,7 @@ struct MovieViewModel: MovieViewModeling {
     
     private static func createReleaseDate(formatter: DateFormatter, releaseDate: String) -> String {
         let date = formatter.date(from: releaseDate) ?? Date()
-        return date.formatted(date: .long, time: .standard)
+        return date.formatted(date: .long, time: .omitted)
     }
     
     private static func createPosterURL(posterPath: String?) -> URL? {
