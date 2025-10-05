@@ -17,7 +17,6 @@ struct MovieListView: View {
         List(movies) { movie in
             MovieView(viewModel: MovieViewModel(movie: movie))
         }
-        // Remove separators and extra styling for a simple appearance.
         .listStyle(.plain)
     }
 }

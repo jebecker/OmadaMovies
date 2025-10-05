@@ -100,4 +100,3 @@ struct SearchMovieRequest: NetworkRequest {
         return request
     }
 }
-

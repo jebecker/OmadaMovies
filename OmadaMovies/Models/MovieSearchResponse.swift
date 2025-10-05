@@ -20,4 +20,3 @@ struct MovieSearchResponse: Decodable {
     /// The total number of results matching the query across all pages.
     let totalResults: Int
 }
-
