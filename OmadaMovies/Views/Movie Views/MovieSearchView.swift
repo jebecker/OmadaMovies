@@ -47,5 +47,6 @@ struct MovieSearchView: View {
                 await viewModel.search()
             }
         }
+        .animation(.easeInOut, value: viewModel.viewState)
     }
 }
